@@ -2,23 +2,17 @@ PHPUnit 3.6.10 by Sebastian Bergmann.
 
 Configuration read from C:\xampp\htdocs\podstawy-php\unit-tests\zad-math-uklad\phpunit.xml.dist
 
-FF
+.F
 
-Time: 0 seconds, Memory: 4.25Mb
+Time: 0 seconds, Memory: 4.00Mb
 
-There were 2 failures:
+There was 1 failure:
 
-1) My\Math\Tests\Uklad2x2Test::testDet2 with data set #0 (array(array(1, 0), array(0, 1)), array(array(1, 2), array(7, 10)))
-Array (...) does not match expected type "integer".
-
-C:\xampp\htdocs\podstawy-php\unit-tests\zad-math-uklad\klasy\My\Math\Tests\Uklad2x2Test.php:21
-C:\xampp\php\phpunit:46
-
-2) My\Math\Tests\Uklad2x2Test::testDet2 with data set #1 (1, -15)
-Failed asserting that -15 matches expected 0.
+1) My\Math\Tests\Uklad2x2Test::testDet2 with data set #1 (array(array(1, 2), array(5, 11)), 23)
+Failed asserting that 23 matches expected 1.
 
 C:\xampp\htdocs\podstawy-php\unit-tests\zad-math-uklad\klasy\My\Math\Tests\Uklad2x2Test.php:21
 C:\xampp\php\phpunit:46
 
 FAILURES!
-Tests: 2, Assertions: 2, Failures: 2.
+Tests: 2, Assertions: 2, Failures: 1.
