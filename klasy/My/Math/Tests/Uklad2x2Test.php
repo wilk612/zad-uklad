@@ -36,4 +36,26 @@ class Uklad2x2Test extends \PHPUnit_Framework_TestCase
         );
     }
 
+    /**
+     *
+     * @dataProvider getTestSolveData
+     *
+     */
+    public function testSolve($rown1, $rown2, $x, $y)
+    {
+        $u = new Uklad2x2($rown1, $rown2);
+        $u->solve();
+        $this->assertEquals($u->getX(), $x);
+        $this->assertEquals($u->getY(), $y);
+    }
+
+    public function getTestSolveData()
+    {
+        return array(
+            array(
+                array(1, 1, -5), array(1, -1, 3), 1, 4
+            ),
+        );
+    }
+
 }

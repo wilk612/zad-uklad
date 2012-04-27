@@ -69,8 +69,16 @@ class Uklad2x2
 
         $this->x = $this->getWx() / $this->getW();
         $this->y = $this->getWy() / $this->getW();
+    }
 
-        return array('x' => $this->x, 'y' => $this->y);
+    public function getX()
+    {
+        return $this->x;
+    }
+
+    public function getY()
+    {
+        return $this->y;
     }
 
 
