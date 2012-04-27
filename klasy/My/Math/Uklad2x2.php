@@ -34,21 +34,44 @@ class Uklad2x2
     public function w()
     {
         $this->w = $this->det2(array($a[0], $b[0]), array($a[1], $b[1]));
-        return $this->wx;
+    }
+
+    public function getW()
+    {
+        return $this->w;
     }
 
     public function wx()
     {
         $this->wx = - $this->det2(array($b[0], $c[0]), array($b[1], $c[1]));
+    }
+
+    public function getWx()
+    {
         return $this->wx;
     }
 
     public function wy()
     {
         $this->wy =  $this->det2(array($a[0], $c[0]), array($a[1], $c[1]));
+    }
+
+    public function getWy()
+    {
         return $this->wy;
     }
 
+    public function solve()
+    {
+        $this->w();
+        $this->wx();
+        $this->wy();
+
+        $this->x = $this->getWx() / $this->getW();
+        $this->y = $this->getWy() / $this->getW();
+
+        return array('x' => $this->x, 'y' => $this->y);
+    }
 
 
 }
