@@ -30,6 +30,9 @@ class Uklad2x2Test extends \PHPUnit_Framework_TestCase
             array(
                 array(array(1, 2), array(5, 3)), -7
             ),
+            array(
+                array(array(1/3, 1/10), array(100, 3)), -9
+            ),
         );
     }
 
