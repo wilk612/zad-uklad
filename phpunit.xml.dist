@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<phpunit>
+    <testsuites>
+        <testsuite name="Uklad2x2 Test Suite">
+            <directory>./klasy/My/*/Tests/</directory>
+        </testsuite>
+    </testsuites>
+</phpunit>
