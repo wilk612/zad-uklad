@@ -25,13 +25,11 @@ class Uklad2x2Test extends \PHPUnit_Framework_TestCase
     {
         return array(
             array(
-                array(array(1, 0), array(0, 1)),
-                array(array(1, 2), array(7, 10)),
+                array(array(1, 0), array(0, 1)), 1
             ),
             array(
-                1,
-                -15
-            )
+                array(array(1, 2), array(5, 11)), 23
+            ),
         );
     }
 
