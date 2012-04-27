@@ -11,14 +11,19 @@ class Uklad2x2
     private $x;
     private $y;
 
-    public function __construct($r1, $r2)
+    public function __construct($r1 = null, $r2 = null)
     {
-        $this->a[0] = $r1[0];
-        $this->a[1] = $r2[0];
-        $this->b[0] = $r1[1];
-        $this->b[1] = $r2[1];
-        $this->c[0] = $r1[2];
-        $this->c[1] = $r2[2];
+        if (null !== $r1) {
+            $this->a[0] = $r1[0];
+            $this->b[0] = $r1[1];
+            $this->c[0] = $r1[2];
+        }
+
+        if (null !== $r2) {
+            $this->a[1] = $r2[0];
+            $this->b[1] = $r2[1];
+            $this->c[1] = $r2[2];
+        }
     }
 
     public function det2($t)
