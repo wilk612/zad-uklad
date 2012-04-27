@@ -8,6 +8,9 @@ class Uklad2x2
     private $b;
     private $c;
 
+    private $x;
+    private $y;
+
     public function __construct($r1, $r2)
     {
         $this->a[0] = $r1[0];
@@ -21,6 +24,12 @@ class Uklad2x2
     public function det2($t)
     {
         return $t[0][0]*$t[1][1] - $t[0][1]*$t[1][0];
+    }
+
+    public function wx()
+    {
+        $this->wx = $this->det2(array($a[0], $b[0]), array($a[1], $b[1]));
+        return $this->wx;
     }
 
 }
