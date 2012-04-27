@@ -2,17 +2,8 @@ PHPUnit 3.6.10 by Sebastian Bergmann.
 
 Configuration read from C:\xampp\htdocs\podstawy-php\unit-tests\zad-math-uklad\phpunit.xml.dist
 
-.F
+..
 
 Time: 0 seconds, Memory: 4.00Mb
 
-There was 1 failure:
-
-1) My\Math\Tests\Uklad2x2Test::testDet2 with data set #1 (array(array(1, 2), array(5, 11)), 23)
-Failed asserting that 23 matches expected 1.
-
-C:\xampp\htdocs\podstawy-php\unit-tests\zad-math-uklad\klasy\My\Math\Tests\Uklad2x2Test.php:21
-C:\xampp\php\phpunit:46
-
-FAILURES!
-Tests: 2, Assertions: 2, Failures: 1.
+OK (2 tests, 2 assertions)

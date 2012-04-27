@@ -28,7 +28,7 @@ class Uklad2x2Test extends \PHPUnit_Framework_TestCase
                 array(array(1, 0), array(0, 1)), 1
             ),
             array(
-                array(array(1, 2), array(5, 11)), 23
+                array(array(1, 2), array(5, 3)), -7
             ),
         );
     }
